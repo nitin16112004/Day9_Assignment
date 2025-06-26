@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+    function searchBook(bookName, callback) {
+      console.log("6. Searching for book:", bookName);
+      setTimeout(() => {
+        let results = [
+          `${bookName} - Beginner's Guide`,
+          `${bookName} - Advanced Concepts`
+        ];
+        callback(results);
+      }, 2000);
+    }
+
+    searchBook("JavaScript", function(results) {
+      console.log("6. Search results:");
+      results.forEach((book, i) => console.log(`${i + 1}. ${book}`));
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+    function setAlarm(time, message) {
+      let currentTime = new Date().getTime();
+      let alarmTime = new Date(time).getTime();
+      let delay = alarmTime - currentTime;
+
+      if (delay <= 0) {
+        console.log("1. ❌ Time has already passed!");
+        return;
+      }
+
+      setTimeout(() => {
+        alert("⏰ Alarm: " + message);
+      }, delay);
+    }
+    setAlarm("2025-06-23T11:00:00", "Team Standup Meeting!");
+    </script>
+</body>
+</html>
