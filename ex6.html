@@ -9,7 +9,7 @@
     <script>
          
     function searchBook(bookName, callback) {
-      console.log("6. Searching for book:", bookName);
+      console.log("Searching for book:", bookName);
       setTimeout(() => {
         let results = [
           `${bookName} - Beginner's Guide`,
@@ -20,7 +20,7 @@
     }
 
     searchBook("JavaScript", function(results) {
-      console.log("6. Search results:");
+      console.log("Search results:");
       results.forEach((book, i) => console.log(`${i + 1}. ${book}`));
     });
     </script>

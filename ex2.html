@@ -13,8 +13,8 @@
       let totalTax = percentages.reduce((acc, p) => acc + (amount * p / 100), 0);
       return amount + totalTax;
     }
-    let taxedAmount = calculateTax(1000, 12, 18); 
-    console.log("2. Amount after tax (1000 + 30%):", taxedAmount);
+    let taxedAmount = calculateTax(6000, 24, 18); 
+    console.log("Amount after tax (6000 + 30%):", taxedAmount);
     </script>
 </body>
 </html>
